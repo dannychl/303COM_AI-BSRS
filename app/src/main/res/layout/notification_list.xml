@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivDivisionLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divisionline"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvKeepTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="Ring On: 8:30pm (Sun)"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ivDivisionLine"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivNotificationAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notificationadapterbg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvKeepTime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/tvNotifyBreadName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate Donut"
+        android:textColor="#000000"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintStart_toStartOf="@id/ivNotificationAdapter"
+        app:layout_constraintEnd_toEndOf="@id/ivNotificationAdapter"
+        app:layout_constraintTop_toTopOf="@id/ivNotificationAdapter"
+        app:layout_constraintBottom_toBottomOf="@id/ivNotificationAdapter"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvKeepDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintStart_toStartOf="@id/ivNotificationAdapter"
+        app:layout_constraintEnd_toEndOf="@id/ivNotificationAdapter"
+        app:layout_constraintTop_toBottomOf="@id/tvNotifyBreadName"
+        app:layout_constraintBottom_toBottomOf="@id/ivNotificationAdapter"
+        android:text="Keep: 10/10/2021 (Sunday)"/>
+
+    <ImageView
+        android:id="@+id/ivBell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bell"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="@id/ivNotificationAdapter"
+        app:layout_constraintBottom_toBottomOf="@id/ivNotificationAdapter"
+        app:layout_constraintTop_toTopOf="@id/ivNotificationAdapter"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

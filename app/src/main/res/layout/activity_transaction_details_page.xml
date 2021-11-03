@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transaction_module.TransactionDetailsPage">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#FFFFFF"
+        android:id="@+id/Transaction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivDivisionPaymentTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ivdivisiontransaction"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ivTransactionHead"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/uploadImage"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/ivTransactionHead"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivTransactionHead"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/ivDivisionPaymentTop"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgroundtransactionheader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTransactionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction ID:"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/uploadImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+    <TextView
+        android:id="@+id/tvTransactionIdAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@id/tvTransactionId"
+        app:layout_constraintTop_toTopOf="@id/tvTransactionId"
+        app:layout_constraintBottom_toBottomOf="@id/tvTransactionId"
+        android:layout_marginLeft="5dp"/>
+
+
+    <TextView
+        android:id="@+id/tvDateTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Date: "
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/tvTransactionId"
+        app:layout_constraintTop_toBottomOf="@id/tvTransactionId" />
+
+    <TextView
+        android:id="@+id/tvDateTransactionAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@id/tvDateTransaction"
+        app:layout_constraintTop_toTopOf="@id/tvDateTransaction"
+        app:layout_constraintBottom_toBottomOf="@id/tvDateTransaction"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTimeTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: "
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDateTransaction"
+        app:layout_constraintEnd_toEndOf="@id/tvDateTransaction"/>
+
+    <TextView
+        android:id="@+id/tvTimeTransactionAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@id/tvTimeTransaction"
+        app:layout_constraintTop_toTopOf="@id/tvTimeTransaction"
+        app:layout_constraintBottom_toBottomOf="@id/tvTimeTransaction"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/tvStatusTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: "
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@id/tvTransactionId"
+        app:layout_constraintTop_toBottomOf="@id/tvTimeTransaction" />
+
+    <TextView
+        android:id="@+id/tvStatusTransactionAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:maxLines="2"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@id/tvStatusTransaction"
+        app:layout_constraintTop_toTopOf="@id/tvStatusTransaction"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/ivTransactionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/transactionheader2"
+        app:layout_constraintTop_toBottomOf="@id/tvStatusTransaction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        app:layout_constraintTop_toBottomOf="@id/ivTransactionHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvTotalPaymentTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Total Payment: RM"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/ivDivisionPayment"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <ImageView
+        android:id="@+id/ivDivisionPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView"
+        android:background="@drawable/ivdivisiontransaction"
+        app:layout_constraintBottom_toTopOf="@id/tvTotalPaymentTransaction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvTotalPaymentTransactionAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@id/tvTotalPaymentTransaction"
+        app:layout_constraintTop_toTopOf="@id/tvTotalPaymentTransaction"
+        app:layout_constraintBottom_toBottomOf="@id/tvTotalPaymentTransaction"
+        android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/ivDivisionPaymentBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ivdivisiontransaction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalPaymentTransaction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

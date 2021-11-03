@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "495462234531",
+    "firebase_url": "https://ai-bsrs-bd33d-default-rtdb.firebaseio.com",
+    "project_id": "ai-bsrs-bd33d",
+    "storage_bucket": "ai-bsrs-bd33d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495462234531:android:e91df290045b9ecdc74216",
+        "android_client_info": {
+          "package_name": "com.example.ai_bsrs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495462234531-tm82190mpmv2a9dfp72ntrg9jadl1ms0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ai_bsrs",
+            "certificate_hash": "11cfbd6f0b98b4fb0169876b1b48f98f2d730bed"
+          }
+        },
+        {
+          "client_id": "495462234531-6lb93360sd4tn9qcfs6q01h33rr79jpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALvAqx1jT7i6X62GMHYMTDjNMYFWivPQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "495462234531-6lb93360sd4tn9qcfs6q01h33rr79jpq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

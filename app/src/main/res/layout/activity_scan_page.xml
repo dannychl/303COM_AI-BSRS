@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage_module.ScanPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgUploadBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/imgbg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16" />
+
+        <ImageView
+            android:id="@+id/imgUpload"
+            android:layout_width="fill_parent"
+            android:layout_height="490dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@id/imgUploadBackground"
+            app:layout_constraintEnd_toEndOf="@id/imgUploadBackground"
+            app:layout_constraintStart_toStartOf="@id/imgUploadBackground"
+            app:layout_constraintTop_toTopOf="@id/imgUploadBackground" />
+
+        <TextView
+            android:id="@+id/tvUploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Start your scan by\n (Upload image from gallery or take a photo)"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@id/imgUploadBackground"
+            app:layout_constraintEnd_toEndOf="@id/imgUploadBackground"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@id/imgUploadBackground"
+            app:layout_constraintTop_toTopOf="@id/imgUploadBackground"
+            app:layout_constraintVertical_bias="0.493" />
+
+        <ImageView
+            android:id="@+id/imgGallery"
+            app:layout_constraintTop_toBottomOf="@id/imgUploadBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imgTakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/browsegallery"/>
+
+        <ImageView
+            android:id="@+id/imgTakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/takephoto"
+            app:layout_constraintTop_toTopOf="@id/imgGallery"
+            app:layout_constraintStart_toEndOf="@id/imgGallery"
+            app:layout_constraintBottom_toBottomOf="@id/imgGallery"
+            android:layout_marginLeft="100dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imgProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/proceedimg"
+            app:layout_constraintTop_toBottomOf="@id/imgTakePhoto"
+            app:layout_constraintStart_toStartOf="@id/imgTakePhoto"
+            app:layout_constraintEnd_toEndOf="@id/imgTakePhoto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/imgCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cancelimg"
+            app:layout_constraintTop_toBottomOf="@id/imgGallery"
+            app:layout_constraintStart_toStartOf="@id/imgGallery"
+            app:layout_constraintEnd_toEndOf="@id/imgGallery"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/imgViewResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/viewresult"
+            app:layout_constraintTop_toBottomOf="@id/imgTakePhoto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/responseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@id/imgGallery"
+            app:layout_constraintBottom_toTopOf="@id/imgGallery"
+            app:layout_constraintEnd_toEndOf="@id/imgTakePhoto"
+            android:layout_marginBottom="10dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleLarge"
+            app:layout_constraintStart_toEndOf="@id/imgGallery"
+            app:layout_constraintEnd_toStartOf="@id/imgTakePhoto"
+            app:layout_constraintTop_toTopOf="@id/imgGallery"
+            app:layout_constraintBottom_toBottomOf="@id/imgGallery"
+
+            />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

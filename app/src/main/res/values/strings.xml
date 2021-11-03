@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AI_BSRS</string>
+    <string name="title_home">Homepage</string>
+    <string name="title_notification">Notifications</string>
+    <string name="title_transaction">Transaction</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="bread_0">Chocolate Donut</string>
+    <string name="bread_1">Mexico</string>
+    <string name="bread_2">Polo Bun</string>
+    <string name="bread_3">Portugese Tart</string>
+
+    <string name="bread_names_prompt">Choose a bread</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_here">Login here!</string>
+    <string name="email">Email</string>
+    <string-array name="bread_names">
+        <item>Chocolate Donut</item>
+        <item>Mexico</item>
+        <item>Polo Bun</item>
+        <item>Portugese Tart</item>
+    </string-array>
+</resources>
